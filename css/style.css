@@ -47,6 +47,7 @@ div.left-container{
 
 div.user-profile{
     height: 8%;
+    border-right: 1px solid #d6d6d6;
 }
 
 div.icons i{
@@ -96,8 +97,8 @@ div.bar{
 
 div.contacts{
     height: 78%;
-    background-color: blue;
-    overflow-y: auto;
+    background-color: white;
+    overflow-y: scroll;
 }
 
 div.user{
@@ -127,6 +128,17 @@ div.date p{
     font-size: .8rem;
     color: #c1cfd7;
     margin: 0 1rem;
+}
+
+div.chat-container{
+    width: 65%;
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+}
+
+div.texted-user{
+    height: 8%;
+    background-color: #eaeaea;;
 }
 
 .flex{
