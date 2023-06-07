@@ -165,9 +165,30 @@ div.msg-bar input{
     border: none;
 }
 
+div.msg{
+    height: 50px;
+    width: 300px;
+    border-radius: .5rem;
+    margin: 1rem 4rem 0;
+}
+
+div.msg div.text-container div.text p{
+    margin: .7rem .9rem;
+}
+
+div.msg div.date p{
+    margin: 2rem .7rem;
+    font-size: .6rem;
+}
+
 .flex{
     display: flex;
     flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 .align-center{
@@ -180,6 +201,15 @@ div.msg-bar input{
 
 .light-grey{
     color: #c1cfd7;
+}
+
+.sent{
+    background-color: #d5f9ba;
+    align-self: flex-end;
+}
+
+.received{
+    background-color: white;
 }
 
 #search-bar{
