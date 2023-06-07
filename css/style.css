@@ -82,7 +82,11 @@ div.notification-text a{
 
 div.search-bar{
     height: 4%;
-    background-color: red;
+    background-color: #fafafa;
+}
+
+div.search-bar input{
+    padding: .3rem;
 }
 
 div.bar{
