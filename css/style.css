@@ -47,13 +47,13 @@ div.left-container{
 
 div.user-profile{
     height: 8%;
-    align-items: center;
 }
 
 div.icons i{
     color: #b1b1b1;
     margin: 0 .7rem;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 div.notifications{
@@ -61,10 +61,28 @@ div.notifications{
     background-color: #8edafc;
 }
 
+div.icon i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #8edafc;
+    margin: 0 .5rem 0 1rem;
+    background-color: #f2fbff;
+}
+
+div.notification-text p{
+    font-size: .9rem;
+}
+
+div.notification-text a{
+    font-size: .9rem;
+    color: grey;
+}
+
 div.search-bar{
     height: 4%;
     background-color: red;
-    align-items: center;
 }
 
 div.bar{
@@ -81,7 +99,6 @@ div.contacts{
 div.user{
     height: 10%;
     background-color: white;
-    align-items: center;
 }
 
 div.image{
@@ -111,6 +128,10 @@ div.date p{
 .flex{
     display: flex;
     flex-direction: row;
+}
+
+.align-center{
+    align-items: center;
 }
 
 #search-bar{
