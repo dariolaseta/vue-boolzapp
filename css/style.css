@@ -50,6 +50,12 @@ div.user-profile{
     align-items: center;
 }
 
+div.icons i{
+    color: #b1b1b1;
+    margin: 0 .7rem;
+    font-size: 1.3rem;
+}
+
 div.notifications{
     height: 10%;
     background-color: #8edafc;
