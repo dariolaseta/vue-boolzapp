@@ -9,7 +9,8 @@ body{
 }
 
 main{
-    height: 1000px;
+    /*Usare linear gradient*/
+    height: 100%;
     width: 100%;
     position: absolute;
     background-color: #dbdbd2;
