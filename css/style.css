@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 main{
     height: 1000px;
     width: 100%;
     position: absolute;
     background-color: #dbdbd2;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
 div.green-bar{
@@ -22,9 +32,26 @@ div.green-bar{
 div.container{
     height: 900px;
     width: 1400px;
-    background-color: red;
+    background-color: white;
     z-index: 3;
     position: relative;
     top: 5vh;
     margin: 0 auto;
+}
+
+div.left-container{
+    width: 35%;
+    height: 100%;
+    background-color: #eaeaea;
+}
+
+div.user{
+    height: 8%;
+    background-color: red;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
 }
