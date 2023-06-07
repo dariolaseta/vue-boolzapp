@@ -45,7 +45,7 @@ div.left-container{
     background-color: #eaeaea;
 }
 
-div.user{
+div.user-profile{
     height: 8%;
     align-items: center;
 }
@@ -64,6 +64,42 @@ div.search-bar{
 div.bar{
     width: 100%;
     padding: 0 2rem;
+}
+
+div.contacts{
+    height: 78%;
+    background-color: blue;
+    overflow-y: auto;
+}
+
+div.user{
+    height: 10%;
+    background-color: white;
+    align-items: center;
+}
+
+div.image{
+    margin: 0 1rem;
+}
+
+div.text-container{
+    width: 100%;
+    justify-content: space-between;
+}
+
+div.text p.user-name{
+    font-size: 1rem;
+}
+
+div.text p.last-access{
+    font-size: .8rem;
+    color: #c1cfd7;
+}
+
+div.date p{
+    font-size: .8rem;
+    color: #c1cfd7;
+    margin: 0 1rem;
 }
 
 .flex{
