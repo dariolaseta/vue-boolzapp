@@ -121,7 +121,6 @@ div.text p.user-name{
 
 div.text p.last-access{
     font-size: .8rem;
-    color: #c1cfd7;
 }
 
 div.date p{
@@ -148,6 +147,14 @@ div.texted-user{
 
 .align-center{
     align-items: center;
+}
+
+.grey{
+    color: #ad9e9d;
+}
+
+.light-grey{
+    color: #c1cfd7;
 }
 
 #search-bar{
