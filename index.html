@@ -61,14 +61,13 @@
                         </div>
 
                         <div class="contacts">
-                            <div class="user flex align-center">
+                            <div v-for="(friends, i) in contacts" class="user flex align-center">
                                 <div class="image">
-                                    <!-- placeholder -->
-                                    <img src="img/avatar_2.jpg" alt="user image">
+                                    <img :src="friends.avatar" alt="user image">
                                 </div>
                                 <div class="text-container flex">
                                     <div class="text">
-                                        <p class="user-name">Michele</p>
+                                        <p class="user-name">{{contacts[i].name}}</p>
                                         <p class="last-access light-grey">Ultimo messaggio inviato</p>
                                     </div>
                                     <div class="date">
