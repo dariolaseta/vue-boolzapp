@@ -166,6 +166,10 @@ createApp({
                     ],
                 }
             ],
+            newMessage: {
+                message: '',
+            },
+
             activeContact: 0,
             indexContact: 0
         }
@@ -175,6 +179,13 @@ createApp({
             this.activeContact = this.contacts[index];
             this.indexContact = index;
             console.log(this.activeContact, this.indexContact)
+        },
+        addMessage(index) {
+            this.contacts[index].messages.push({
+            message: this.newMessage.message,
+            status: 'sent'
+            })
+            
         }
     }
 }).mount("#contents");
