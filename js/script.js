@@ -185,7 +185,13 @@ createApp({
             message: this.newMessage.message,
             status: 'sent'
             })
-            
+            this.newMessage.message = "";
+            setTimeout(() => {
+                this.contacts[index].messages.push({
+                message: 'Ok',
+                status: 'received',
+                })
+        }, 1000);
         }
     }
 }).mount("#contents");
