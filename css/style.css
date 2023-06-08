@@ -101,7 +101,6 @@ div.contacts{
 
 div.user{
     height: 10%;
-    background-color: white;
     border-bottom: 1px solid #e9ebeb;
 }
 
@@ -161,19 +160,20 @@ div.msg-bar input{
     border: none;
 }
 
-div.msg{
+/* div.msg{
     height: 50px;
     width: 300px;
     border-radius: .5rem;
     margin: 1rem 4rem 0;
-}
+} */
 
 div.msg div.text-container div.text p{
-    margin: .7rem .9rem;
+    padding: 1rem 2rem;
 }
 
 div.msg div.date p{
-    margin: 2rem .7rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
     font-size: .6rem;
 }
 
@@ -202,15 +202,25 @@ div.msg div.date p{
 .sent{
     background-color: #d5f9ba;
     align-self: flex-end;
+    width: 300px;
+    border-radius: .5rem;
+    margin: 1rem 4rem 0;
 }
 
 .received{
     background-color: white;
+    width: 300px;
+    border-radius: .5rem;
+    margin: 1rem 4rem 0;
 }
 
 .fa-search{
     font-size: .8rem;
     cursor: default;
+}
+
+.active-contact{
+    background-color: #e9ebeb;
 }
 
 #search-bar{
