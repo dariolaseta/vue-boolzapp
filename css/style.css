@@ -23,16 +23,14 @@ img{
 
 i{
     cursor: pointer;
+    color: #b1b1b1;
 }
 
 div.container{
     height: 900px;
     width: 1400px;
     background-color: white;
-    z-index: 3;
-    position: relative;
-    top: 5vh;
-    margin: 0 auto;
+    margin: 1.5rem auto;
 }
 
 div.left-container{
@@ -47,7 +45,6 @@ div.user-profile{
 }
 
 div.icons i{
-    color: #b1b1b1;
     margin: 0 .7rem;
     font-size: 1.3rem;
 }
@@ -58,12 +55,12 @@ div.notifications{
 }
 
 div.icon i{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    font-size: 2.5rem;
     color: #8edafc;
     margin: 0 .5rem 0 1rem;
+    padding: .68rem;
     background-color: #f2fbff;
 }
 
@@ -81,8 +78,14 @@ div.search-bar{
     background-color: #fafafa;
 }
 
+div.search-bar label{
+    background-color: white;
+    padding: 0 2rem;
+}
+
 div.search-bar input{
     padding: .3rem;
+    border: none;
 }
 
 div.bar{
@@ -99,6 +102,7 @@ div.contacts{
 div.user{
     height: 10%;
     background-color: white;
+    border-bottom: 1px solid #e9ebeb;
 }
 
 div.image{
@@ -127,7 +131,6 @@ div.date p{
 div.chat-container{
     width: 65%;
     background-image: url(../img/mine.jpg);
-    overflow-y: scroll;
 }
 
 div.texted-user{
@@ -137,6 +140,7 @@ div.texted-user{
 
 div.chat-msg{
     height: 85%;
+    overflow-y: scroll;
 }
 
 div.chat-footer{
@@ -152,7 +156,7 @@ div.chat-footer i{
 }
 
 div.msg-bar input{
-    padding: .5rem 20rem;
+    padding: .8rem 20rem;
     border-radius: .3rem;
     border: none;
 }
@@ -202,6 +206,11 @@ div.msg div.date p{
 
 .received{
     background-color: white;
+}
+
+.fa-search{
+    font-size: .8rem;
+    cursor: default;
 }
 
 #search-bar{

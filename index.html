@@ -53,15 +53,16 @@
                         </div>
 
                         <div class="search-bar flex align-center">
-                            <div class="bar">
+                            <div class="bar flex">
+                                <label for="search-bar"><i class="fa fa-solid fa-search"></i></label>
                                 <input type="text" name="search-bar" id="search-bar" placeholder="Cerca o inizia una nuova chat">
                             </div>
                         </div>
 
                         <div class="contacts">
-                            <div v-for="(friends, i) in contacts" class="user flex align-center">
+                            <div v-for="(contact, i) in contacts" class="user flex align-center">
                                 <div class="image">
-                                    <img :src="friends.avatar" alt="user image">
+                                    <img :src="contact.avatar" alt="user image">
                                 </div>
                                 <div class="text-container flex">
                                     <div class="text">
