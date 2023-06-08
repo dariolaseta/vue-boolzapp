@@ -9,11 +9,10 @@ body{
 }
 
 main{
-    /*Usare linear gradient*/
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: #dbdbd2;
+    background-image: linear-gradient(to bottom, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
 }
 
 img{
@@ -24,14 +23,6 @@ img{
 
 i{
     cursor: pointer;
-}
-
-div.green-bar{
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    background-color: #009688;
-    top: 0;
 }
 
 div.container{
