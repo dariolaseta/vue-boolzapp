@@ -11,7 +11,7 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Hai portato a spasso il cane?',
+                            message: 'Hai portato a spasso il cane? o',
                             status: 'sent'
                         },
                         {
@@ -165,8 +165,16 @@ createApp({
                         }
                     ],
                 }
-            ]
-            
+            ],
+            activeContact: 0,
+            indexContact: 0
+        }
+    },
+    methods:{
+        setActiveContact(index){
+            this.activeContact = this.contacts[index];
+            this.indexContact = index;
+            console.log(this.activeContact, this.indexContact)
         }
     }
 }).mount("#contents");

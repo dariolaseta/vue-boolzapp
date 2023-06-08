@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="contacts">
-                            <div v-for="(contact, i) in contacts" class="user flex align-center">
+                            <div v-for="(contact, i) in contacts" class="user flex align-center" @click="setActiveContact(i)">
                                 <div class="image">
                                     <img :src="contact.avatar" alt="user image">
                                 </div>
@@ -80,12 +80,12 @@
                     <div class="chat-container">
                         <div class="texted-user flex align-center">
                             <div class="image">
-                                <img :src="contacts[0].avatar" alt="user image">
+                                <img :src="contacts[indexContact].avatar" alt="user image">
                             </div>
 
                             <div class="text-container flex">
                                 <div class="text">
-                                    <p class="user-name">Michele</p>
+                                    <p class="user-name">{{contacts[indexContact].name}}</p>
                                     <p class="last-access grey">Ultimo accesso oggi alle 12:00</p>
                                 </div>
 
