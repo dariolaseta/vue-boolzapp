@@ -153,11 +153,15 @@ div.chat-footer i{
     color: #6b7374;
     font-size: 1.3rem;
 }
+div.msg-bar{
+    width: 80%;
+}
 
 div.msg-bar input{
-    padding: .8rem 20rem;
+    padding: .8rem;
     border-radius: .3rem;
     border: none;
+    width: 100%;
 }
 
 /* div.msg{
