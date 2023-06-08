@@ -153,6 +153,7 @@ div.chat-footer i{
     color: #6b7374;
     font-size: 1.3rem;
 }
+
 div.msg-bar{
     width: 80%;
 }
@@ -229,4 +230,9 @@ div.msg div.date p{
 
 #search-bar{
     width: 100%;
+}
+
+div.user:hover{
+    cursor: pointer;
+    background-color: #eae5e5;
 }
