@@ -169,7 +169,6 @@ createApp({
             newMessage: {
                 message: '',
             },
-
             activeContact: 0,
             indexContact: 0
         }
@@ -178,20 +177,32 @@ createApp({
         setActiveContact(index){
             this.activeContact = this.contacts[index];
             this.indexContact = index;
-            console.log(this.activeContact, this.indexContact)
         },
         addMessage(index) {
             this.contacts[index].messages.push({
             message: this.newMessage.message,
             status: 'sent'
-            })
+            });
             this.newMessage.message = "";
             setTimeout(() => {
                 this.contacts[index].messages.push({
                 message: 'Ok',
                 status: 'received',
                 })
-        }, 1000);
+            }, 1000);
+        },
+        searchContact(){
+            let search = this.filteredMsg.toLowerCase();
+            console.log(search);
+
+            this.contacts.forEach((contact) => {
+
+                if (contact.name.toLowerCase().includes(search)) {
+                    contact.visible = true;
+                } else {
+                    contact.visible = false;
+                }
+            });
         }
     }
 }).mount("#contents");

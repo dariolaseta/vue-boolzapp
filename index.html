@@ -55,22 +55,24 @@
                         <div class="search-bar flex align-center">
                             <div class="bar flex">
                                 <label for="search-bar"><i class="fa fa-solid fa-search"></i></label>
-                                <input type="text" name="search-bar" id="search-bar" placeholder="Cerca o inizia una nuova chat">
+                                <input type="text" name="search-bar" id="search-bar" placeholder="Cerca o inizia una nuova chat" v-model="filteredMsg" @keyup.enter="searchContact()">
                             </div>
                         </div>
 
                         <div class="contacts">
-                            <div v-for="(contact, i) in contacts" class="user flex align-center" :class="{ 'active-contact': activeContact == contact }" @click="setActiveContact(i)">
-                                <div class="image">
-                                    <img :src="contact.avatar" alt="user image">
-                                </div>
-                                <div class="text-container flex">
-                                    <div class="text">
-                                        <p class="user-name">{{contacts[i].name}}</p>
-                                        <p class="last-access light-grey">Ultimo messaggio inviato</p>
+                            <div v-for="(contact, i) in contacts" class="user align-center" :class="{ 'active-contact': activeContact == contact }">
+                                <div class="contacts-visibility flex align-center" v-if="(contacts[i].visible)" @click="setActiveContact(i)">
+                                    <div class="image" >
+                                        <img :src="contact.avatar" alt="user image">
                                     </div>
-                                    <div class="date">
-                                        <p>12:00</p>
+                                    <div class="text-container flex">
+                                        <div class="text">
+                                            <p class="user-name">{{contacts[i].name}}</p>
+                                            <p class="last-access light-grey">Ultimo messaggio inviato</p>
+                                        </div>
+                                        <div class="date">
+                                            <p>12:00</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +106,7 @@
                                         <p>{{contactMessage.message}}</p>
                                     </div>
                                     <div class="date">
-                                        <p>15:30</p>
+                                        <p>{{contactMessage.date}}</p>
                                     </div>
                                 </div>
                             </div>
